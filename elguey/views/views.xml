@@ -1,33 +1,33 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="elguey.list">
-      <field name="name">elguey list</field>
-      <field name="model">elguey.elguey</field>
+
+    <record model="ir.ui.view" id="elguey1.list">
+      <field name="name">elguey1 list</field>
+      <field name="model">elguey1.elguey1</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="Nombre"/>
+          <field name="Valor"/>
+          <field name="Costo"/>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
+      
     <record model="ir.actions.act_window" id="elguey.action_window">
       <field name="name">elguey window</field>
-      <field name="res_model">elguey.elguey</field>
+      <field name="res_model">elguey1.elguey1</field>
       <field name="view_mode">tree,form</field>
     </record>
 -->
 
     <!-- server action to the one above -->
-<!--
+
     <record model="ir.actions.server" id="elguey.action_server">
-      <field name="name">elguey server</field>
+      <field name="name">elguey1 server</field>
       <field name="model_id" ref="model_elguey_elguey"/>
       <field name="state">code</field>
       <field name="code">
@@ -41,20 +41,20 @@
 -->
 
     <!-- Top menu item -->
-<!--
+
     <menuitem name="elguey" id="elguey.menu_root"/>
 -->
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="elguey.menu_1" parent="elguey.menu_root"/>
-    <menuitem name="Menu 2" id="elguey.menu_2" parent="elguey.menu_root"/>
+
+    <menuitem name="Menu 1" id="elguey1.menu_1" parent="elguey1.menu_root"/>
+    <menuitem name="Menu 2" id="elguey1.menu_2" parent="elguey1.menu_root"/>
 -->
     <!-- actions -->
-<!--
-    <menuitem name="List" id="elguey.menu_1_list" parent="elguey.menu_1"
-              action="elguey.action_window"/>
-    <menuitem name="Server to list" id="elguey" parent="elguey.menu_2"
-              action="elguey.action_server"/>
+
+    <menuitem name="List" id="elguey1.menu_1_list" parent="elguey1.menu_1"
+              action="elguey1.action_window"/>
+    <menuitem name="Server to list" id="elguey" parent="elguey1.menu_2"
+              action="elguey1.action_server"/>
 -->
   </data>
 </odoo>
